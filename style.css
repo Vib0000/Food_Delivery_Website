@@ -1,0 +1,278 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navgation Section  */
+
+#navbar {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 94px;
+}
+
+#navbar ul::before {
+    content: "";
+    position: absolute;
+    /* background-color: black; */
+    height: 100%;
+    width: 144%;
+    top: 0;
+    left: 0;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+#navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li {
+    list-style: none;
+}
+
+#navbar ul li a {
+    color: #8bc34a;
+    text-decoration: none;
+    padding: 5px 20px;
+    margin-right: 40px;
+    font-weight: bold;
+    font-size: larger;
+}
+
+#navbar ul li a:hover {
+    border-radius: 18px;
+    border: 2px solid rgb(25, 108, 2);
+    color: rgb(5, 224, 56);
+    background-color: rgb(6, 162, 74);
+    text-decoration: none;
+}
+
+#navbar ul li a .edit {
+    margin-left: 4px;
+}
+
+/* Logo image Section */
+
+#logo {
+    padding: 7px;
+    margin: 2px 15px;
+    margin-right: 45px;
+}
+
+#logo img {
+    border-radius: 45px;
+    width: 80px;
+    height: 80px;
+}
+
+/* Home Section */
+
+#home {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    height: 300px;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    background: url('img/main.jpg') no-repeat center center/cover;
+    height: 110%;
+    width: 100%;
+    opacity: 0.89;
+    z-index: -1;
+}
+
+#home p {
+    margin-top: 5px;
+    color: rgb(229, 233, 244);
+    font-size: 1.1rem;
+    font-family: sans-serif;
+}
+
+
+/* Button Section */
+.btn {
+    background-color: rgb(247, 218, 180);
+    color: rgba(233, 42, 42, 0.923);
+    margin-top: 6px;
+    padding: 3px 14px;
+    border: 2px solid black;
+    border-radius: 16px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+.btn:hover {
+    background-color: rgb(247, 218, 180);
+    color: rgb(255, 0, 8);
+    border: 2px solid rgb(48, 0, 0);
+    text-decoration: underline;
+}
+
+/* Services Section */
+.services-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+}
+
+#services {
+    display: flex;
+    padding: 30px 40px;
+}
+
+.box {
+    text-align: center;
+    border: 2px solid salmon;
+    margin: 10px;
+    padding: 20px 20px;
+    border-radius: 10px;
+    background-color: #f9f3bf4f
+}
+
+.box img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    box-shadow: 2px 2px #F57F17;
+}
+
+/* Client Section */
+
+#client Section {
+    height: 340px;
+}
+
+#client-section::before {
+    content: "";
+    opacity: 0.5;
+    background: url('img/main.jpg');
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 40%;
+}
+
+.client-item {
+    padding: 15px 15px;
+}
+
+#clients {
+    height: 210px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clients img {
+    height: 100px;
+    background-color: bisque;
+}
+
+#clients .bgp img {
+    border-radius: 50px;
+}
+
+/* Contact us Section */
+#contact {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: coral;
+}
+
+#contact-box {
+    margin-top: 15px;
+    border: 7px solid #cc5236;
+    padding: 14px 80px 10px 58px;
+    border-radius: 15px;
+}
+
+#contact-box form {
+    width: 100%;
+}
+
+#contact-box label {
+    font-size: 1.4rem;
+    font-family: serif;
+    font-weight: bold;
+    background-color: #f38558;
+    border-radius: 6px;
+}
+
+.form-group input {
+    padding: 8px;
+    margin: 3px;
+    border: 3px solid black;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.form-groupmessage textarea {
+    padding: 8px;
+    margin: 9px;
+    border: 3px solid black;
+    border-radius: 10px;
+
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    font-style: italic
+}
+
+footer {
+    background-color: rgb(243, 215, 170);
+    padding: 2px 8px;
+}
+
+/* Utility Section */
+
+.h-primary {
+    text-align: center;
+    font-size: 2.6rem;
+    font-family: cursive;
+    color: rgb(11, 1, 38);
+}
+
+.h-secondary {
+    font-size: 1.5rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 5px 5px;
+    color: brown;
+}
+
+.center {
+    text-align: center;
+}
+
+.transition {
+    animation: HariSharnam 3s ease-out 0.5s 1 backwards;
+}
+
+@keyframes HariSharnam {
+    from {
+        width: 150px;
+    }
+
+    to {
+        width: 290px;
+    }
+}

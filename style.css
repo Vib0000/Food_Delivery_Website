@@ -38,22 +38,23 @@
 }
 
 #navbar ul li a {
-    color: #18be08;
-    border: 1px solid rgb(102, 255, 71);
+    color: #f877a8;
+    border: 2px solid rgb(181, 3, 163);
     text-shadow: 5px 5px 1px 1px;
-    box-shadow: 3px 3px;
+    box-shadow: 4px 3px 10px 2px;
     background-color: transparent;
-    text-decoration: underline;
     padding: 5px 20px;
     margin-right: 40px;
     font-weight: bold;
     font-size: larger;
+    text-decoration: none;
 }
 
 #navbar ul li a:hover {
-    color: rgb(3, 91, 23);
-    background-color: rgb(6, 162, 74);
+    color: rgb(239, 229, 238);
+    background-color: rgb(196, 9, 168);
     text-decoration: none;
+    border-radius: 6px;
 }
 
 #navbar ul li a .edit {
@@ -118,10 +119,12 @@
 }
 
 .btn:hover {
-    background-color: rgb(247, 218, 180);
+    cursor: pointer;
+    box-shadow: 1px 2px 2px 1px;
+    background-color: rgb(236, 232, 227);
     color: rgb(255, 0, 8);
     border: 2px solid rgb(48, 0, 0);
-    text-decoration: underline;
+    /* text-decoration: underline; */
 }
 
 /* Services Section */

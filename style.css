@@ -38,8 +38,12 @@
 }
 
 #navbar ul li a {
-    color: #8bc34a;
-    text-decoration: none;
+    color: #18be08;
+    border: 1px solid rgb(102, 255, 71);
+    text-shadow: 5px 5px 1px 1px;
+    box-shadow: 3px 3px;
+    background-color: transparent;
+    text-decoration: underline;
     padding: 5px 20px;
     margin-right: 40px;
     font-weight: bold;
@@ -47,9 +51,7 @@
 }
 
 #navbar ul li a:hover {
-    border-radius: 18px;
-    border: 2px solid rgb(25, 108, 2);
-    color: rgb(5, 224, 56);
+    color: rgb(3, 91, 23);
     background-color: rgb(6, 162, 74);
     text-decoration: none;
 }
